@@ -10,7 +10,20 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
+        VStack {
+            Image("foodonatewallpaper")
+                .resizable()
+                .cornerRadius(30)
+                .padding()
+                .shadow(radius: 10)
+            Image(systemName: "heart.fill")
+            Text("Foodonate is totally amazing!")
+                .fontWeight(.heavy)
+                .foregroundColor(.blue)
+                .font(.largeTitle)
+                .multilineTextAlignment(.center)
+                .shadow(color: .black, radius: 0.1, x: 2, y: 2)
+        }
     }
 }
 
